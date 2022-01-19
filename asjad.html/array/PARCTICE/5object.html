@@ -1,0 +1,168 @@
+Q11
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function bubblesort_algo()
+        {
+            
+            List=[6,4,0,3,-2,1];
+            is_sorted = false;
+            while(!is_sorted){
+                is_sorted = true
+                for(let n=0;n<List.length-1;n++){
+if(List[n]>List[n+1]){
+    var x=List[n+1];
+    List[n+1]=List[n];
+    List[n]=x;
+    is_sorted = false
+}
+                }
+            }
+            return List;
+        }
+        console.log(bubblesort_algo());
+    </script>
+</body>
+</html>
+
+<!-- Q10
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        cyclinder={
+            radius:10,
+            height:25,
+            volume:function(){
+            let x=3.142*this.radius*this.radius*this.height;
+            return x;
+        }
+        };
+console.log(cyclinder.volume());
+    </script>
+</body>
+</html> -->
+<!-- Q9
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var library=[
+            {
+                author:'bill gates',
+                title:'The Road Ahead',
+                readingstatus: true
+            },
+            {
+                author:'steve jobes',
+                title:'Walter Isaacson',
+                readingstatus: true 
+            },
+            {
+                author:'Suzanne Collins',
+                title:'Mokingjay: The Final Book of The Hunger Games',
+                readingstatus: false
+            },
+        ];
+        for(i=0;i<library.length;i++)
+        {
+var book = "'" + library[i].title + "'" + 'by' + library[i].author + ".";
+if(library[i].readingstatus){
+    console.log("already read"+book);
+}
+else{
+    console.log("you still need to read"+book)
+}
+        }
+    </script>
+</body>
+</html> -->
+
+<!-- q8
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var student={
+            name:'David Rayy',
+            sclass:"VI",
+            rollno:12,
+        };
+        delete student.rollno;
+        console.log(student.name);
+        console.log(student.sclass);
+        console.log(student.rollno); -->
+<!-- 
+    </script>
+</body>
+</html> -->
+<!-- Q7
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        mobile={
+            name:'iq00z3',
+            brand:'vivo',
+            modelNo:75421095645,
+            size:168,
+        };
+        console.log(mobile.name);
+        console.log(mobile.brand);
+        console.log(mobile.modelNo);
+        console.log(mobile.size); -->
+    <!-- </script>
+</body>
+</html> -->
+<!-- Q5
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let person = {
+firstName: 'John',
+lastName:'Doe',
+};
+for(let x in person){
+    console.log(person[x]);
+}
+    </script>
+</body>
+</html> --:1

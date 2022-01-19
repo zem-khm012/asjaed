@@ -1,0 +1,102 @@
+Q15
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+      var log ={
+          info:function (info){
+      console.log('info:' + info);
+    },
+      warning :function(warning){
+    console.log('warning:' + warning);
+    },
+    error :function(error){
+        console.log('Error:' + error);
+    },
+};
+log.info();
+log.warning();
+log.error();
+  </script>
+</body>
+</html>
+<!-- Q14
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         person={
+            name:'asjad',
+            lastname:'khan',
+            age:'21',
+            height:6.1,
+            weight:90,
+        };
+        for(let x in person){
+            console.log(x);
+        }
+    </script>
+</body>
+</html> -->
+<!-- Q13
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        person={
+            name:'asjad',
+            lastname:'khan',
+            age:'21',
+            height:6.1,
+            weight:90,
+        };
+        for(let x in person){
+        console.log(person[x]);
+    }
+    </script>
+</body>
+</html> -->
+<!-- 
+Q12
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+       circle={
+           r:20,
+           area:function(){
+          return this.r*this.r*3.142;
+           },
+           perimeter:function(){
+               return 2*3.142*this.r;
+           }
+        }
+        console.log("area of circle is"+circle.area());
+        console.log("perimeter of circle is"+circle.perimeter());
+   </script> 
+</body>
+</html> -->

@@ -1,0 +1,212 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>setting default value to a function parameter(y=2)</p>
+    <p id="demo"></p>
+    <script>
+function myfunction(x,y=2){
+    return x+y;
+}
+document.getElementById("demo").innerHTML=myfunction(4);
+    </script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const sum= ()=> 15;
+        const calculate=function(x,y=x*sum()){
+            return x+y;
+        }
+        const result= calculate(10);
+        console.log(result);
+    </script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sum(x=3,y=5){
+            return x+y;
+        }
+        console.log(sum(5,15));
+        console.log(sum(7));
+        console.log(sum());
+    </script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function add(x,y=1,z=2){
+            console.log(arguments.length);
+            return x+y+z;
+        }
+        add(10);
+        add(10,20);
+        add(10,20,30);
+    </script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let taxRate=()=> 0.1;
+        let getPrice = function(price,tax=price*taxRate()){
+            return price + tax;
+        }
+        let fullPrice= getPrice(100);
+        console.log(fullPrice);
+    </script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function add(x=1,y=x,z=x+y){
+            return x+y+z;
+        }
+        console.log(add());
+    </script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function date(d = today()){
+            console.log(d);
+        }
+        function today(){
+            return(new Date()).toLocaleDateString("en-us");
+        }
+        date();
+    </script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function creativeDiv(height='100px',width='100px',border='solid 1px red')
+        {
+            let div=document.createElement('div');
+            div.style.height = height;
+            div.style.width = width;
+            div.style.border = border;
+            document.body.appendChild(div);
+            return div;
+        }
+creativeDiv();
+creativeDiv(undefined,undefined,'solid 5px blue');
+    </script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function say(message='hi'){
+            console.log(message);
+        }
+        say();
+        say('hello');
+    </script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function greet(name,greeting,message = greeting +''+ name){
+            return[name,greeting,message];
+        }
+        greet('asjad','hi');
+        console.log(greet('asjad','hi','happy birthday'));
+
+    </script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function multiply(a,b=1){
+            return a*b;
+        }
+        console.log(multiply(5,2));
+        console.log(multiply(5));
+    </script>
+</body>
+</html> -->

@@ -1,0 +1,299 @@
+<!--  -->
+<!-- q15
+ans: Ternary
+The conditional (Ternary)operator is the only javascript operator that takes three operands: a condition followed by a question mark(?),then an expression to  execute if the condition is true.followed by a colon(:),and finally the expresson to execute if the condition is false.This operator is frequently used as an alternative to an if..else statement.
+ex:- 
+function  getfee(is member){
+    return (is member ? '1000':'2000');
+}
+console.log(getfee(true));
+console.log(getfee(false));
+console.log(getfee(null)); -->
+<!-- q14
+ans:promise 
+A Promise is a JavaScript object that links "Producing Code" and "Consuming Code".
+"Producing Code" can take some time and "Consuming Code" must wait for the result.
+Chaining
+In JavaScript, a promise is a good way to handle asynchronous operations.
+It is used to find out if the asynchronous operation is successfully completed
+or not.
+A promise may have one of three states.
+ Pending
+ Fulfilled
+ Rejected
+A promise starts in a pending state. That means the process is not complete.
+If the operation is successful, the process ends in a fulfilled state. And, if an
+error occurs, the process ends in a rejected state.
+For example, when you request data from the server by using a promise, it will
+be in a pending state. When the data arrives successfully, it will be in a
+fulfilled state. If an error occurs, then it will be in a rejected state.
+ex:- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const count=true;
+        let countvalue = new Promise(function(resolve,reject) {
+            if (count) {
+                resolve("There is count value");
+            }
+            else{
+                reject("There is no count value")
+            }
+        });
+        console.log(countvalue);
+    </script>
+</body>
+</html> -->
+<!-- q13
+ans:A function is a block of code that performs a certain task when called . 
+in javascript,you can also pass a function as an argument to a function.The function that is passed as an argument inside of another function is called a callback function.
+ex-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function add(x,y) {
+      z=x+y;
+      return z;
+      callback();            
+        }
+        function call() {
+            console.log("The Result is");
+        }
+        add(10,20,call());
+    </script>
+</body>
+</html> -->
+<!-- q12
+as:-Map object 
+The map object holds key-value pairs and remembers the orignal insertation order of the keys.Any value(Both objects and primitive values)maybe used as either a key or a value.
+ex - 
+const person1 = {name: 'Asjad'};
+const peson2 = {name: 'zain'};
+const person3 = {name: 'aj'};
+
+// Create a new Map
+const persons = new Map();
+
+// Add new Elements to the Map
+persons.set(Asjad, 21);
+persons.set(zain, 20);
+persons.set(aj, 20); -->
+<!-- q11
+ES6 comes to your rescue with the concept of Modules.A module organizes a related set of JavaScript code. A module can contain variables and functions. A module is nothing more than a chunk of JavaScript code written in a file. By default, variables and functions of a module are not available for use. Variables and functions within a module should be exported so that they can be accessed from within other files. Modules in ES6 work only in strict mode. This means variables or functions declared in a module will not be accessible globally.
+There are two types of module:
+1)Export Module.
+2)Import Module.
+1)Export Module:-The export keyword can be used to export components in a module. Exports in a module can be classified as follows :Named Exports
+                       Default Exports.
+                       1)Named Exports:-
+                       Named exports are distinguished by their names. There can be several named exports in a module.
+                       ex- export fname1;
+                           export fname2;
+                        2)Default Exports:-Modules that need to export only a single value can use default exports. There can be only one default export per module.
+                        ex-export default fname1_name;
+                           export default fname2_name;
+2)Import Module:-To be able to consume a module, use the import keyword. A module can have multiple import statements.
+Importing Named Exports
+While importing named exports, the names of the corresponding components must match.
+ex-import {fname1,fname2..fnameN} from module_name
+Importing Default Exports
+Unlike named exports, a default export can be imported with any name
+ex-import any_variable_name from module_name. -->
+
+<!-- q10
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     let   arr=[1,2,3];
+     let   obj={a:1,b:2,c:3};
+        let p={...arr,...obj};
+        console.log(p);
+    </script>
+</body>
+</html> -->
+<!-- q9
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arg=[1,2,3,4,5,6];
+        function add(...arg){
+           var sum=0;
+           arg.forEach(function(arg) {
+        sum += arg;       
+         });
+         return sum;
+        }
+        console.log(add(...arg));
+    </script>
+</body>
+</html> -->
+<!-- q8
+Ans:The default parameters is a way to set default values for function parameters a value is no passed in(it is undefined).In a function ,li a parameter is not provided, then value becomes undefined. In this case the default value that we specify is applied by the compilier.
+     ES6 function allows to set default values.
+     ex- add=function(a=5,b=10){
+         z=a+b;
+         return z;
+     }
+     add();. -->
+<!-- q7
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log(`Sum 2 + 3 = ${2 + 3}`);
+    </script>
+</body>
+</html> -->
+<!-- q6 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let numbers = [4,2,6];
+               numbers.sort=((a,b)=> b - a);   
+                console.log(numbers);
+ </script>
+</body>
+</html> -->                                                                                  
+<!-- q5
+Ans
+Var
+Before the advent of ES6, var declarations ruled. There are issues associated with variables declared with var, though. That is why it was necessary for new ways to declare variables to emerge. First, let's get to understand var more before we discuss those issues.
+Let
+let is now preferred for variable declaration. It's no surprise as it comes as an improvement to var declarations. It also solves the problem with var that we just covered. Let's consider why this is so.
+Const
+Variables declared with the const maintain constant values. const declarations share some similarities with let declarations.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+       let a=10;
+       let a=20;
+       console.log(a); -->
+       var b=5;
+       var b=47;
+       console.log(b);
+       const c=15;
+       const c=78;
+       console.log(c); 
+    </script>
+</body>
+</html> -->
+<!-- q4 -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let p=["hello","are","you","there"];
+        p.reverse ();
+        console.log(p);
+    </script>
+</body>
+</html> -->
+<!-- q3 -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let set1=new Set([1,2,3,4,5,5,5,5,5,5]);
+        console.log(set1);
+    </script>
+</body>
+</html> -->
+<!-- q2 -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=[1,2,3,4,5];
+        let [p,q,r,s,t]=a
+        console.log(p);
+        console.log(q);
+        console.log(r);
+        console.log(s);
+        console.log(t);
+
+    </script>
+</body>
+</html> -->
+<!-- q1 
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        write=(()=>{ console.log("HelloWorld!")
+        });
+     write();
+    </script>
+</body>
+</html> --> -->
